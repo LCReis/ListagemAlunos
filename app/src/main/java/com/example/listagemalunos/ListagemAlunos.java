@@ -2,15 +2,13 @@ package com.example.listagemalunos;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.Switch;
 
-public class MainActivity extends AppCompatActivity {
+public class ListagemAlunos extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_listagem_aluno, menu);
+        inflater.inflate(R.menu.listagem_aluno, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -30,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.novoAluno) {
-            Intent i = new Intent(this, cadastroAluno.class);
+            Intent i = new Intent(this, CadastroAluno.class);
             startActivity(i);
         } else if (id == R.id.menuFechar) {
             finish();
@@ -38,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+}
 
 
 

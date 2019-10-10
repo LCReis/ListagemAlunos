@@ -9,9 +9,7 @@ import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-import java.lang.reflect.Array;
-
-public class cadastroAluno extends AppCompatActivity {
+public class CadastroAluno extends AppCompatActivity {
 
     Spinner listaCursos;
 
@@ -33,7 +31,7 @@ public class cadastroAluno extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_cadastro_aluno, menu);
+        inflater.inflate(R.menu.cadastro_aluno, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
