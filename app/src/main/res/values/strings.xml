@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ListagemAlunos</string>
+
+    <string-array name="Cursos">
+        <item>ADS</item>
+        <item>GTI</item>
+
+    </string-array>
+
+</resources>
